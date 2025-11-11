@@ -1,0 +1,41 @@
+public class Administrador extends Usuario {
+    private Horario horarioTrabajo;
+    public Administrador(String nombre, int id, String password) {
+        super(nombre, id, password);
+    }
+
+    public void setHorarioTrabajo(Horario horarioTrabajo) {
+        this.horarioTrabajo = horarioTrabajo;
+    }
+    public Horario getHorarioTrabajo() {
+        return horarioTrabajo;
+    }
+    
+    public void asignarPermisos() {
+        System.out.println("Asignando permisos de administrador...");
+    }
+    public void editarNotas()
+    {
+        System.out.println("Editando notas...");
+    }
+
+    public void eliminarNota()
+    {
+        System.out.println("Administrador " + getNombre() + "Eliminando nota...");
+    }
+     public void crearNota() {
+        System.out.println("Administrador " + getNombre() + " creando nota...");
+    }
+    
+    public void agregarUsuarios() {
+        System.out.println("Administrador " + getNombre() + " agregando usuarios...");
+    }
+    
+    public void eliminarUsuario() {
+        System.out.println("Administrador " + getNombre() + " eliminando usuario...");
+    }
+    
+    public void verListaUsuarios() {
+        System.out.println("Administrador " + getNombre() + " viendo lista de usuarios...");
+    }
+}
